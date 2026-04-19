@@ -1,0 +1,29 @@
+# Ignore everything by default (recursive)
+**/*
+
+# Allow directory traversal
+!*/
+
+# Keep this file
+!.gitignore
+
+# README
+!README.md
+!readme.md
+
+# Core code
+!**/*.asm
+!**/*.c
+!**/*.h
+!**/*.sh
+
+# Benchmarks and results
+!bench_*
+!benchmark_artifacts/bench_*
+!benchmark_results.tsv
+!benchmark_artifacts/benchmark_results.tsv
+
+# Re-ignore non-core artifacts
+verify_artifacts/
+venv/
+.cline/
